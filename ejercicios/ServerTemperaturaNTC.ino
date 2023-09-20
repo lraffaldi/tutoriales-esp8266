@@ -71,13 +71,18 @@ float readTemp(){
 void handleRoot() {
   String estado = "20°";
   
-  String html = "<html><body>";
+  String html = "<!DOCTYPE html>";
+  html += "<html lang='es'>";
+  html += "<head>";
+  html += "<meta charset='UTF-8'>";
+  html += "</head>";
   html += "<center>";
   html += "<h1>Tutoriales para EET 343</h1>";
   html += "<p>Bienvenido a nuestra colección de tutoriales para EET 343. Aquí encontrarás recursos y guías para tus estudios.</p>";
   html += "<p>¡Aprende, practica y domina el contenido!</p>";
+  html += "</br>";
+  html += "<p><h3><b>Temperatura:</b> " + String(temperatura) + "°C</p></h3>";
   html += "</center>";
-  html += "<p>Temperatura: " + String(temperatura) + "°C</p>";
   html += "</body></html>";
   
   server.send(200, "text/html", html);
