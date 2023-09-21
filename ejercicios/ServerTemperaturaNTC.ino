@@ -6,8 +6,8 @@
 #define NOMINAL_TEMPERATURE 25
 #define BCOEFFICIENT 3435
 
-const char *ssid = "CoWork";      // Cambia esto con el nombre de tu red WiFi
-const char *password = "tre2022!";  // Cambia esto con la contraseña de tu red WiFi
+const char *ssid = "";      // Cambia esto con el nombre de tu red WiFi
+const char *password = "";  // Cambia esto con la contraseña de tu red WiFi
 long t = 0;
 float temperatura = 0;
 
