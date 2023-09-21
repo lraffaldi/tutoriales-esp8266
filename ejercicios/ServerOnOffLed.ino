@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h> // Para poner ESP en Modo AP o Station
 #include <ESP8266WebServer.h> // Para utilizar servidores asincronos
 
-const char *ssid = "Maestros";      // Cambia esto con el nombre de tu red WiFi
-const char *password = "docentes_2018";  // Cambia esto con la contraseña de tu red WiFi
+const char *ssid = "";      // Cambia esto con el nombre de tu red WiFi
+const char *password = "";  // Cambia esto con la contraseña de tu red WiFi
 
 ESP8266WebServer server(80); // Puerto 80 -> http (443 -> https)
 
