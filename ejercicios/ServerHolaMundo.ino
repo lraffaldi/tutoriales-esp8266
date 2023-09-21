@@ -36,18 +36,5 @@ void loop() {
 }
 
 void funcionBarra() {
-  String html = "<!DOCTYPE html>";
-  html += "<html lang='es'>";
-  html += "<head>";
-  html += "<meta charset='UTF-8'>";
-  html += "</head>";
-  html += "<center>";
-  html += "<h1>Tutoriales para EET 343</h1>";
-  html += "<p>Bienvenido a nuestra colección de tutoriales para EET 343. Aquí encontrarás recursos y guías para tus estudios.</p>";
-  html += "<p>¡Aprende, practica y domina el contenido!</p>";
-  html += "</br>";
-  html += "<p><h3>HOLA MUNDO</h3>";
-  html += "</center>";
-  html += "</body></html>";
-  server.send(200, "text/html", html);
+  server.send(200, "text/html", "HOLA MUNDO");
 }
